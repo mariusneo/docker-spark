@@ -37,3 +37,23 @@ If you execute these images without scripts mentioned above, please:
 * Read [documentation](http://sometechshit.blogspot.ru/2015/04/running-spark-standalone-cluster-in.html) to understand what's going on.
 
 I also recommend you to use [Zeppelin](https://zeppelin.incubator.apache.org/) instead of spark shell for working with data. It has pleasant GUI and IPython like functionality. Please use docker [container](https://registry.hub.docker.com/u/epahomov/docker-zeppelin/) for that.
+
+
+## Working examples:
+
+
+The examples presented below should be executed from within ${SPARK_INSTALL_DIR}
+
+In the examples below, the spark driver URL is set to be spark://172.17.0.1:7077 
+
+
+```
+./bin/spark-submit --class org.apache.spark.examples.SparkPi --master spark://172.17.0.1:7077 /examples/jars/spark-examples_2.11-2.0.0.jar 100
+```
+
+
+```
+./bin/spark-submit --master spark://172.17.0.1:7077 examples/src/main/python/pi.py 100
+```
+
+
