@@ -48,7 +48,7 @@ In the examples below, the spark driver URL is set to be spark://172.17.0.1:7077
 
 
 ```
-./bin/spark-submit --class org.apache.spark.examples.SparkPi --master spark://172.17.0.1:7077 /examples/jars/spark-examples_2.11-2.0.0.jar 100
+./bin/spark-submit --class org.apache.spark.examples.SparkPi --master spark://172.17.0.1:7077 examples/jars/spark-examples_2.11-2.0.0.jar 100
 ```
 
 
